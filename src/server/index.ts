@@ -2,7 +2,12 @@ import { publicProcedure, router } from "./trpc";
 
 export const appRouter = router({
     getTodos: publicProcedure.query(() => {
-        return [{ id: 1, text: "hello" }, { id: 2, text: "world" }]
+        return {
+            shapes: [
+              { id: '1', type: 'rectangle', x: 100, y: 100, width: 200, height: 100 },
+              // Otros elementos
+            ],
+          };
     })
 })
 
