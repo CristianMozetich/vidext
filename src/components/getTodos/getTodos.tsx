@@ -5,7 +5,13 @@ const GetTodos = () => {
   const getTodos = trpc.getTodos.useQuery();
   return (
     <div>
-      <div>{JSON.stringify(getTodos.data)}</div>
+      {
+        getTodos.data?.map((todo) => (
+          <div key={todo.text}>
+            {todo.text}
+          </div>
+        ))
+      }
     </div>
   );
 };
