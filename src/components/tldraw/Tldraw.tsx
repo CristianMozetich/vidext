@@ -65,31 +65,26 @@ export default function TldrawDashboard() {
 
 
   return (
-    <div
-      style={{
-        position: "absolute",
-        inset: 0,
-        width: "80%",
-        height: "100%",
-        marginLeft: "auto",
+    <div className="absolute inset-0 w-full lg:w-4/5 h-full lg:ml-auto">
+    <Tldraw
+      onMount={(editorInstance) => {
+        console.log("Editor montado:", editorInstance);
+        setEditor(editorInstance);
       }}
+    />
+    <Button
+      onClick={handleSave}
+      className="z-10 fixed top-14 m-2 bg-butt hover:bg-hov"
     >
-      <Tldraw
-        onMount={(editorInstance) => {
-          console.log("Editor montado:", editorInstance);
-          setEditor(editorInstance); 
-        }}
-      />
-      <Button onClick={handleSave} className="z-10 fixed top-14 m-2 bg-butt hover:bg-hov">
-        Guardar
-      </Button>
-      {/* datos guardados */}
-      {savedData && (
-        <div className="mt-4 p-4 bg-gray-100 border border-gray-300 rounded flex flex-col items-center justify-center">
-          <h2 className="text-lg font-bold">Datos Guardados:</h2>
-          <pre>{JSON.stringify(savedData, null, 2)}</pre>
-        </div>
-      )}
-    </div>
+      Guardar
+    </Button>
+    {/* datos guardados */}
+    {savedData && (
+      <div className="mt-4 p-4 bg-gray-100 border border-gray-300 rounded flex flex-col items-center justify-center">
+        <h2 className="text-lg font-bold">Datos Guardados:</h2>
+        <pre>{JSON.stringify(savedData, null, 2)}</pre>
+      </div>
+    )}
+  </div>
   );
 }
