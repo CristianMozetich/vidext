@@ -28,6 +28,11 @@ const config = {
           to: { height: "0" },
         },
       },
+      colors: {
+        butt: "#5d6748",
+        letter: "#6c7293",
+        hov: "#6d7856",
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

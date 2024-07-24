@@ -4,6 +4,7 @@ import { trpc } from "../../app/_trpc/client";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import "tldraw/tldraw.css";
+import { Query } from "@tanstack/react-query";
 
 
 
@@ -79,7 +80,7 @@ export default function TldrawDashboard() {
           setEditor(editorInstance); 
         }}
       />
-      <Button onClick={handleSave} className="z-10 fixed top-20 m-2">
+      <Button onClick={handleSave} className="z-10 fixed top-14 m-2 bg-butt hover:bg-hov">
         Guardar
       </Button>
       {/* datos guardados */}
