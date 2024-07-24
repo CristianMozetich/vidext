@@ -14,8 +14,8 @@ export const appRouter = router({
     getTldraw: publicProcedure.input(z.string()).query(({ input }) => {
       return getTldraw(input);
     }),
-    saveTldraw: publicProcedure
-      .input(z.object({ id: z.string(), data: z.any() }))
+    createTldraw: publicProcedure
+      .input(z.object({ id: z.any(), data: z.any() }))
       .mutation(({ input }) => {
         return saveTldraw(input.id, input.data);
       }),
