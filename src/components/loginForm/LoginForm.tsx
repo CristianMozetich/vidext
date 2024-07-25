@@ -6,19 +6,13 @@ import FaceIcon from "../../app/icons/FaceIcon";
 const Login = () => {
   return (
     <div className="flex flex-col gap-2">
-      <Button
-        
-        className="w-80 h-9 gap-5 bg-slate-200 dark:bg-button  rounded-xl  flex items-center justify-center"
-      >
+      <Button className="w-80 h-9 gap-1 bg-butt dark:bg-hov  rounded-xl  flex items-center justify-center">
         <GoogleIcon />
-        <span>Ingresa con Google</span>
+        <span>Sign in with Google</span>
       </Button>
-      <Button
-      
-        className="w-80 h-9 gap-1 bg-slate-200 dark:bg-button  rounded-xl  flex items-center justify-center"
-      >
+      <Button className="w-80 h-9 gap-1 bg-butt dark:bg-hov  rounded-xl  flex items-center justify-center">
         <FaceIcon />
-        <span>Ingresa con Facebook</span>
+        <span>Sign in with Facebook</span>
       </Button>
     </div>
   );
