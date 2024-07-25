@@ -1,3 +1,4 @@
+// Tasks
 let todos: { text: string }[] = [];
 
 export const getTodos = () => todos;
@@ -7,13 +8,15 @@ export const addTodo = (todo: { text: string }) => {
   return todo;
 };
 
-let documents: { [id: string]: any } = {}; // Un objeto para almacenar documentos por ID
+// Tldraw
+let tldraw: [] = [];
 
-export const getTldraw = (id: string) => {
-  return documents[id] || null;
+export const getTldraw = () => {
+  return tldraw;
 };
 
-export const saveTldraw = (id: string, data: any) => {
-  documents[id] = data;
+export const updateTldraw = (data: any) => {
+  console.log("Datos recibidos para actualizar:", data);
+  tldraw = data;
   return data;
 };

@@ -1,5 +1,5 @@
 import { publicProcedure, router } from "./trpc";
-import { addTodo, getTodos, getTldraw, saveTldraw } from "./db";
+import { addTodo, getTodos, getTldraw, updateTldraw } from "./db";
 import { z } from "zod";
 
 export const appRouter = router({
@@ -11,13 +11,13 @@ export const appRouter = router({
     .mutation(({ input }) => {
       return addTodo({ text: input.text });
     }),
-    getTldraw: publicProcedure.input(z.string()).query(({ input }) => {
-      return getTldraw(input);
+    getTldraw: publicProcedure.query(() => {
+      return getTldraw();
     }),
-    createTldraw: publicProcedure
-      .input(z.object({ id: z.any(), data: z.any() }))
+    updateTldraw: publicProcedure
+      .input(z.object({  data: z.any() }))
       .mutation(({ input }) => {
-        return saveTldraw(input.id, input.data);
+        return updateTldraw({ data: input.data });
       }),
 });
 

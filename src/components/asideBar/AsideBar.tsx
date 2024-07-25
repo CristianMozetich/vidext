@@ -14,7 +14,7 @@ const AsideBar = () => {
         </Button>
         <Button className="bg-butt hover:bg-hov">
           <Link className="text-slate-100 font-bold " href={"/pages/todoList"}>
-            TodoList
+            Tasks
           </Link>
         </Button>
       </div>
