@@ -24,7 +24,7 @@ const AsideBar = () => {
           </Link>
         </Button>
       </div>
-      <div className="flex flex-col items-start gap-6 p-3">
+      <div className="flex flex-col items-start gap-6 p-3 h-2/3 justify-end">
         <Button className="bg-hov hover:bg-butt" onClick={() => signOut()}>
           Sing Out
         </Button>
