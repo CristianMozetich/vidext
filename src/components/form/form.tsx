@@ -25,7 +25,7 @@ const Form = () => {
         className="border p-2 rounded-xl"
         type="text"
       />
-      <Button type="submit" variant="outline">
+      <Button className="bg-hov text-slate-200 hover:text-slate-200 hover:bg-butt" type="submit" variant="outline">
         Submit
       </Button>
     </form>

@@ -13,18 +13,23 @@ const AsideBar = () => {
         <LogoIcon />
       </div>
       <div className="flex flex-col justify-center items-start gap-6 p-3">
-        <Button className="bg-butt hover:bg-hov">
+        <Button className="bg-hov hover:bg-butt">
           <Link className="text-slate-100 font-bold " href={"/pages/tldraw"}>
             Editor
           </Link>
         </Button>
-        <Button className="bg-butt hover:bg-hov">
+        <Button className="bg-hov hover:bg-butt">
           <Link className="text-slate-100 font-bold " href={"/pages/todoList"}>
             Tasks
           </Link>
         </Button>
-        <Button className="bg-butt hover:bg-hov" onClick={() => signOut()}>
+      </div>
+      <div className="flex flex-col items-start gap-6 p-3">
+        <Button className="bg-hov hover:bg-butt" onClick={() => signOut()}>
           Sing Out
+        </Button>
+        <Button className="bg-hov hover:bg-butt">
+          <Link href={"/"}>Start</Link>
         </Button>
       </div>
     </div>

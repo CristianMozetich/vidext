@@ -1,7 +1,6 @@
 import { appRouter } from "@/server"; 
 import { getTldraw, updateTldraw } from "@/server/db"; 
 
-// Mock de las funciones de la base de datos
 jest.mock('@/server/db', () => ({
   getTldraw: jest.fn(),
   updateTldraw: jest.fn(),
