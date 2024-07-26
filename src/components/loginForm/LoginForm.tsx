@@ -1,18 +1,18 @@
 import React from "react";
 import { Button } from "../ui/button";
 import GoogleIcon from "../../app/icons/GoogleIcon";
-import FaceIcon from "../../app/icons/FaceIcon";
-
+import { signIn, useSession } from "next-auth/react";
 const Login = () => {
+  const { data: session } = useSession();
+  console.log(session);
   return (
     <div className="flex flex-col gap-2">
-      <Button className="w-80 h-9 gap-1 bg-butt dark:bg-hov  rounded-xl  flex items-center justify-center">
+      <Button
+        onClick={() => signIn("google")}
+        className="w-80 h-9 gap-1 bg-butt hover:bg-hov  rounded-xl  flex items-center justify-center"
+      >
         <GoogleIcon />
         <span>Sign in with Google</span>
-      </Button>
-      <Button className="w-80 h-9 gap-1 bg-butt dark:bg-hov  rounded-xl  flex items-center justify-center">
-        <FaceIcon />
-        <span>Sign in with Facebook</span>
       </Button>
     </div>
   );

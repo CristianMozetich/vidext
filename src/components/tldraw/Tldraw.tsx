@@ -32,11 +32,11 @@ export default function TldrawDashboard() {
   };
 
   return (
-    <div className="absolute inset-0 w-full lg:w-4/5 h-full lg:ml-auto">
+    <div className="absolute inset-0 w-full lg:w-5/6 h-full lg:ml-auto">
       <Tldraw onMount={(editorInstance) => setEditor(editorInstance)} />
       <Button
         onClick={handleChangeShape}
-        className="z-10 fixed top-14 m-2 bg-butt hover:bg-hov"
+        className="z-10 fixed top-14 m-2 bg-slate-300 text-letter hover:bg-slate-400 hover:text-slate-700"
       >
         Update
       </Button>
