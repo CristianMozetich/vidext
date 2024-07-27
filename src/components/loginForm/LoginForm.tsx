@@ -9,7 +9,7 @@ const Login = () => {
     <div className="flex flex-col gap-2">
       <Button
         onClick={() => signIn("google")}
-        className="w-80 h-9 gap-1 bg-butt hover:bg-hov  rounded-xl  flex items-center justify-center"
+        className="md:w-80 h-9 gap-1 bg-butt hover:bg-hov  rounded-xl  flex items-center justify-center"
       >
         <GoogleIcon />
         <span>Sign in with Google</span>

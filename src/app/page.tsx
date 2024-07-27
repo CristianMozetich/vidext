@@ -18,10 +18,10 @@ export default function Home() {
       </div>
       <div className="relative z-10 flex flex-col w-full h-screen justify-center items-center">
         <div className="border bg-green-100 w-1/2 h-2/3 flex flex-col justify-center items-center rounded-3xl">
-          <h1 className="text-3xl text-start text-letter p-3">
+          <h1 className="text-3xl text-center text-letter p-3">
             Welcome to Editor
           </h1>
-          <Button className="bg-butt hover:bg-hov m-4 p-5 w-80 rounded-xl">
+          <Button className="bg-butt hover:bg-hov m-4 p-5 md:w-80 rounded-xl">
             <Link href="/pages/tldraw">Get Started</Link>
           </Button>
           <Login />

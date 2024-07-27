@@ -18,6 +18,7 @@ const Form = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="flex flex-col m-2 gap-3">
+      <h1 className="text-xl text-letter">Add a Task</h1>
       <input
         id="content"
         value={content}

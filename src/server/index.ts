@@ -11,14 +11,14 @@ export const appRouter = router({
     .mutation(({ input }) => {
       return addTodo({ text: input.text });
     }),
-    getTldraw: publicProcedure.query(() => {
-      return getTldraw();
+  getTldraw: publicProcedure.query(() => {
+    return getTldraw();
+  }),
+  updateTldraw: publicProcedure
+    .input(z.object({ data: z.any() }))
+    .mutation(({ input }) => {
+      return updateTldraw({ data: input.data });
     }),
-    updateTldraw: publicProcedure
-      .input(z.object({  data: z.any() }))
-      .mutation(({ input }) => {
-        return updateTldraw({ data: input.data });
-      }),
 });
 
 export type AppRouter = typeof appRouter;
