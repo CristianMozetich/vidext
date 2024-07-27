@@ -22,7 +22,7 @@ https://github.com/CristianMozetich/vidext.git
 ### Lista de Tareas
 #### La aplicación cuenta con un formulario que permite crear una lista de tareas.
 ### Componentes Adicionales
-#### La aplicación cuenta con una simple Sidebar de navegación que se adapta a diseños responsive.
+#### Sidebar de navegación que se adapta a diseños responsive.
 
 ## Tecnologías
 [![next.js](https://img.shields.io/badge/next.js-000?style=for-the-badge&logo=next.js&logoColor)](https://nextui.org/)
