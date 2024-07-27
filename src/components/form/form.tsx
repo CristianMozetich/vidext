@@ -1,36 +1,19 @@
 import React from "react";
-import { Button } from "../ui/button";
-import { useState } from "react";
-import { trpc } from "@/app/_trpc/client";
+import { useTodoForm } from "../../hooks/useTaskForm";
+import TodoInput from "./Input";
+import SubmitButton from "./SubmitButton";
 
-const Form = () => {
-  const [content, setContent] = useState("");
-  const getTodos = trpc.getTodos.useQuery();
-  const createTodo = trpc.createTodo.useMutation({
-    onSettled: () => {
-      getTodos.refetch();
-    },
-  });
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    await createTodo.mutateAsync({ text: content });
-    setContent("");
-  };
+const Form: React.FC = () => {
+  const { content, setContent, handleSubmit } = useTodoForm();
+
   return (
     <form onSubmit={handleSubmit} className="flex flex-col m-2 gap-3">
       <h1 className="text-xl text-letter">Add a Task</h1>
-      <input
-        id="content"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        className="border p-2 rounded-xl"
-        type="text"
-      />
-      <Button className="bg-hov text-slate-200 hover:text-slate-200 hover:bg-butt" type="submit" variant="outline">
-        Submit
-      </Button>
+      <TodoInput value={content} onChange={(e) => setContent(e.target.value)} />
+      <SubmitButton />
     </form>
   );
 };
 
 export default Form;
+

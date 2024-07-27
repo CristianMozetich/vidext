@@ -17,7 +17,7 @@ export const appRouter = router({
   updateTldraw: publicProcedure
     .input(z.object({ data: z.any() }))
     .mutation(({ input }) => {
-      return updateTldraw({ data: input.data });
+      return updateTldraw(input.data);
     }),
 });
 

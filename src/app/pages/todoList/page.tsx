@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Form from "../../../components/form/form";
+import Form from "../../../components/form/Form";
 import GetTodos from "../../../components/getTodos/getTodos";
 
 const page = () => {

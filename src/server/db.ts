@@ -15,7 +15,7 @@ export const getTldraw = () => {
   return tldraw;
 };
 
-export const updateTldraw = (data: any) => {
+export const updateTldraw = (data: []) => {
   console.log("Datos recibidos para actualizar:", data);
   tldraw = data;
   return data;
