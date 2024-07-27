@@ -31,7 +31,7 @@ describe('appRouter', () => {
       const result = await caller.updateTldraw({ data: 'data' });
 
       expect(result).toEqual(inputData);
-      expect(updateTldraw).toHaveBeenCalledWith({ data: 'data' });
+      expect(updateTldraw).toHaveBeenCalledWith(inputData);
     });
   });
 });

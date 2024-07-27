@@ -10,7 +10,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ value, onChange }) => (
     id="content"
     value={value}
     onChange={onChange}
-    className="border p-2 rounded-xl"
+    className="border border-slate-500 p-2 rounded-xl"
     type="text"
   />
 );
