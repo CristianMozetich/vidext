@@ -20,7 +20,7 @@ https://github.com/CristianMozetich/vidext.git
 ### Editor Tldraw
 #### Este componente permite realizar todas las funciones de Tldraw y además cuenta con un boton integrado que facilita el almacenamiento y la modificación de los shapes.
 ### Lista de Tareas
-#### La aplicación cuenta además con un formulario que permite crear una lista de tareas.
+#### La aplicación cuenta con un formulario que permite crear una lista de tareas.
 ### Componentes Adicionales
 #### La aplicación cuenta con una simple Sidebar de navegación que se adapta a diseños responsive.
 
