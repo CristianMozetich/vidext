@@ -1,3 +1,4 @@
+
 // Tasks
 let todos: { text: string }[] = [];
 
@@ -9,14 +10,16 @@ export const addTodo = (todo: { text: string }) => {
 };
 
 // Tldraw
-let tldraw: [] = [];
+let tldraw: { data: "data"}[] = [];
 
 export const getTldraw = () => {
+  console.log("test get", tldraw);
   return tldraw;
 };
 
-export const updateTldraw = (data: any) => {
+export const updateTldraw = (data: { data: "data"}) => {
   console.log("Datos recibidos para actualizar:", data);
-  tldraw = data;
+
+  tldraw.push(data);
   return data;
 };
