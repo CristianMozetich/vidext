@@ -30,6 +30,6 @@ https://github.com/CristianMozetich/vidext.git
 [![react](https://img.shields.io/badge/react-000?style=for-the-badge&logo=react&logoColor)](https://react.dev/)
 [![typescript](https://img.shields.io/badge/typescript-000?style=for-the-badge&logo=typescript&logoColor)](https://www.typescriptlang.org/)
 [![tRPC](https://img.shields.io/badge/trpc-000?style=for-the-badge&logo=trpc&logoColor)](https://trpc.io/)
-[![shadcnui](https://img.shields.io/badge/shadcn/ui-000?style=for-the-badge&logo=shadcn/ui&logoColor)](https://trpc.io/)
-[![jest](https://img.shields.io/badge/jest-000?style=for-the-badge&logo=jest&logoColor)](https://trpc.io/)
+[![shadcnui](https://img.shields.io/badge/shadcn/ui-000?style=for-the-badge&logo=shadcn/ui&logoColor)](https://ui.shadcn.com/)
+[![jest](https://img.shields.io/badge/jest-000?style=for-the-badge&logo=jest&logoColor)](https://jestjs.io/)
 
