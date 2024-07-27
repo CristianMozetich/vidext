@@ -13,7 +13,7 @@ export const useTodoForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (content.trim() === "") return; // Avoid submitting empty content
+    if (content.trim() === "") return;
     await createTodo.mutateAsync({ text: content });
     setContent("");
   };
