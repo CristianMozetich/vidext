@@ -6,7 +6,7 @@ import "tldraw/tldraw.css";
 import { useTldrawShapes } from "../../hooks/useTldrawShapes";
 
 export default function TldrawDashboard() {
-  const { editor, setEditor, shape, handleChangeShape, isLoading, error } =
+  const { setEditor, handleChangeShape, isLoading, error } =
     useTldrawShapes();
 
   return (

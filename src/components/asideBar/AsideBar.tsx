@@ -11,7 +11,7 @@ const AsideBar: React.FC = () => {
   return (
     <>
       {/* Mobile */}
-      <div className={`lg:hidden fixed top-40 left-0 z-50 p-4 bg-slate-200 ${open ? 'w-64' : 'w-16'} transition-all duration-300`}>
+      <div className={`lg:hidden fixed top-40 left-0 z-50 p-4 bg-slate-200 ${open ? 'w-56' : 'w-16'} transition-all duration-300`}>
         <button onClick={handleMenu} className="text-2xl">
           <MenuIcon />
         </button>

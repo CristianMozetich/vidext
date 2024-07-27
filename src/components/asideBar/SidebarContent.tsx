@@ -10,18 +10,28 @@ interface SidebarContentProps {
 }
 
 const SidebarContent: React.FC<SidebarContentProps> = ({ open }) => (
-  <div className={`flex flex-col h-full p-3 transition-all duration-300 ${open ? 'w-64' : 'w-16'}`}>
-    <div className="flex flex-col justify-start items-center">
+  <div
+    className={`flex flex-col h-full p-3 transition-all duration-300 ${
+      open ? "w-64" : "w-16"
+    }`}
+  >
+    <div className="flex flex-col justify-center items-start">
       <h1 className="text-letter font-light">
-        Design By{" "}
-        <Link className="hover:text-black" target="_blank" href="https://github.com/CristianMozetich">
+        Design By {""}
+        <Link
+          className="hover:text-black"
+          target="_blank"
+          href="https://github.com/CristianMozetich"
+        >
           Cristian
         </Link>
       </h1>
+    </div>
+    <div className="flex justify-start items-start">
       <h1 className="text-2xl text-letter">Editor</h1>
       <LogoIcon />
     </div>
-    <div className="flex flex-col justify-center items-center gap-3 p-3">
+    <div className="flex flex-col justify-center items-start gap-3 mt-6">
       <SidebarLink href="/pages/tldraw">Editor</SidebarLink>
       <SidebarLink href="/pages/todoList">Tasks</SidebarLink>
       <Button className="bg-hov hover:bg-butt" onClick={() => signOut()}>
@@ -33,4 +43,3 @@ const SidebarContent: React.FC<SidebarContentProps> = ({ open }) => (
 );
 
 export default SidebarContent;
-
