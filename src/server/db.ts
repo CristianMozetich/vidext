@@ -1,6 +1,6 @@
 import { TldrawDataBase } from "./types";
 
-// Tldraw
+// Tldraw DB
 let tldraw: TldrawDataBase[] = [];
 
 export const getTldraw = () => {
