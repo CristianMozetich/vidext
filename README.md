@@ -25,11 +25,13 @@ npm test
 ```
 ## Detalles de los componentes
 ### Editor Tldraw
-#### Este componente permite realizar todas las funciones de Tldraw y además cuenta con un boton integrado que facilita el almacenamiento y la modificación de los shapes.
-### Lista de Tareas
-#### La aplicación cuenta con un formulario que permite crear una lista de tareas.
+#### Botón Update
+- Envía datos actualizados del editor del usuario a una base de datos local para que persista la información en su navegador.
+#### Botón Share
+- Recibe los datos del editor del usuario que provienen de los datos previamentes guardados en la base de datos local.
 ### Componentes Adicionales
-#### Sidebar de Navegación: Se adapta a diseños responsive.
+#### Sidebar de Navegación: 
+- Se adapta a diseños responsive.
 
 ## Tecnologías
 [![next.js](https://img.shields.io/badge/next.js-000?style=for-the-badge&logo=next.js&logoColor)](https://nextui.org/)
