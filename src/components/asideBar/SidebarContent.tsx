@@ -4,7 +4,7 @@ import LogoIcon from "@/app/icons/LogoIcon";
 import SidebarLink from "./SidebarLink";
 import { signOut } from "next-auth/react";
 import { Button } from "../ui/button";
-
+// CONTENIDO SIDEBAR
 interface SidebarContentProps {
   open: boolean;
 }

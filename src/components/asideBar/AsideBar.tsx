@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SidebarContent from "./SidebarContent";
 import MenuIcon from "../../app/icons/MenuIcon";
 import MenuClose from "@/app/icons/MenuClose";
-
+// ASIDE BAR
 const AsideBar: React.FC = () => {
   const [open, setOpen] = useState(false);
 

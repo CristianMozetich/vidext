@@ -1,11 +1,11 @@
-// hooks/useTldrawShapes.ts
+// HOOK TLDRAW
 import { useState, useEffect } from "react";
 import { Editor } from "tldraw";
 import { trpc } from "../app/_trpc/client";
 
 export const useTldrawShapes = () => {
   const { data, refetch, isLoading, error } = trpc.getTldraw.useQuery();
-  const [editor, setEditor] = useState<Editor | null>();
+  const [editor, setEditor] = useState<Editor | null>(null);
   const [shape, setShape] = useState<{}>({});
 
   const updateTldrawMutation = trpc.updateTldraw.useMutation({

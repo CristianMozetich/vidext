@@ -2,7 +2,7 @@
 import React from "react";
 import Form from "../../../components/form/Form";
 import GetTodos from "../../../components/getTodos/getTodos";
-
+// PAGINA TAREAS
 const page = () => {
   return (
     <div className="md:grid grid-cols-2 md:w-10/12 h-screen ml-auto gap-5 justify-center">

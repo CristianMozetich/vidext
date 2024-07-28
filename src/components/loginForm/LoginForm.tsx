@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import GoogleIcon from "../../app/icons/GoogleIcon";
 import { signIn, useSession } from "next-auth/react";
+
+// LOGIN NEXT AUTH GOOGLE
 const Login = () => {
   const { data: session } = useSession();
   console.log(session);

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { trpc } from "../../app/_trpc/client";
+// TAREAS 
 const GetTodos = () => {
   const getTodos = trpc.getTodos.useQuery();
 
