@@ -4,16 +4,16 @@
 ## Editor es una aplicación que utiliza la biblioteca de Tldraw. El proyecto integra varias tecnologías modernas, incluyendo Nextjs, TailwindCSS, Shadcn y tRPC. La aplicación muestra operaciones básicas con un enfoque en la integración con Tldraw y la actualización de datos.
 
 ## Instalación
-### 1 - Clona el Repositorio
-https://github.com/CristianMozetich/vidext.git
-### 2 - Instala las Dependencias
+### 1 - Clona el Repositorio:
+git clone https://github.com/CristianMozetich/vidext.git
+### 2 - Instala las Dependencias:
 #### cd client
 #### npm install
-### 3 - Ejecuta el servidor de Desarrollo
+### 3 - Ejecuta el servidor de Desarrollo:
 #### npm run dev
 
 ## Puebas
-### Ejecuta las pruebas de los endpoints realizadas con Jest
+### Para ejecutar las pruebas de los endpoints realizadas con Jest:
 #### npm test
 
 ## Detalles de los componentes
@@ -22,7 +22,7 @@ https://github.com/CristianMozetich/vidext.git
 ### Lista de Tareas
 #### La aplicación cuenta con un formulario que permite crear una lista de tareas.
 ### Componentes Adicionales
-#### Sidebar de navegación que se adapta a diseños responsive.
+#### Sidebar de Navegación: Se adapta a diseños responsive.
 
 ## Tecnologías
 [![next.js](https://img.shields.io/badge/next.js-000?style=for-the-badge&logo=next.js&logoColor)](https://nextui.org/)
