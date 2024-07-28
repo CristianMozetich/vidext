@@ -5,17 +5,24 @@
 
 ## Instalación
 ### 1 - Clona el Repositorio:
+```
 git clone https://github.com/CristianMozetich/vidext.git
+```
 ### 2 - Instala las Dependencias:
-#### cd client
-#### npm install
+```
+cd client
+npm install
+```
 ### 3 - Ejecuta el servidor de Desarrollo:
-#### npm run dev
+```
+npm run dev
+```
 
 ## Puebas
 ### Para ejecutar las pruebas de los endpoints realizadas con Jest:
-#### npm test
-
+```
+npm test
+```
 ## Detalles de los componentes
 ### Editor Tldraw
 #### Este componente permite realizar todas las funciones de Tldraw y además cuenta con un boton integrado que facilita el almacenamiento y la modificación de los shapes.
