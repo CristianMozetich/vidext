@@ -1,4 +1,4 @@
-![Editor Vidext](public/bird.png)
+
 
 # Vidext - Prueba Técnica
 ## Editor es una aplicación que utiliza la biblioteca de Tldraw. El proyecto integra varias tecnologías modernas, incluyendo Nextjs, TailwindCSS, Shadcn y tRPC. La aplicación muestra operaciones básicas con un enfoque en la integración con Tldraw y la actualización de datos.
