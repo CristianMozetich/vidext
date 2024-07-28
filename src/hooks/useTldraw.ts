@@ -87,9 +87,7 @@ export const useTldraw = () => {
       updateTldrawMutation.mutate({
         data: { id: randomId, records: newShape, assets: newAssets },
       });
-    } else {
-      console.error("Update failed");
-    }
+    } 
   };
 
   const handleUpdate = () => {
