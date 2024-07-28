@@ -19,7 +19,7 @@ npm run dev
 ```
 
 ## Puebas
-### Para ejecutar las pruebas de los endpoints realizadas con Jest:
+### Para ejecutar las pruebas de los endpoints solicitados con Jest:
 ```
 npm test
 ```
