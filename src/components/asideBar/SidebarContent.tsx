@@ -33,7 +33,6 @@ const SidebarContent: React.FC<SidebarContentProps> = ({ open }) => (
     </div>
     <div className="flex flex-col justify-center items-start gap-3 mt-6">
       <SidebarLink href="/pages/tldraw">Editor</SidebarLink>
-      <SidebarLink href="/pages/todoList">Tasks</SidebarLink>
       <Button className="bg-hov hover:bg-butt" onClick={() => signOut()}>
         Sign Out
       </Button>

@@ -1,24 +1,14 @@
-// DB
-// Tasks
-let todos: { text: string }[] = [];
-
-export const getTodos = () => todos;
-
-export const addTodo = (todo: { text: string }) => {
-  todos.push(todo);
-  return todo;
-};
+import { TldrawDataBase } from "./types";
 
 // Tldraw
-let tldraw: { data: "data"}[] = [];
+let tldraw: TldrawDataBase[] = [];
 
 export const getTldraw = () => {
-  console.log("test get", tldraw);
+
   return tldraw;
 };
 
-export const updateTldraw = (data: { data: "data"}) => {
-  console.log("Datos recibidos para actualizar:", data);
+export const updateTldraw = (data: TldrawDataBase) => {
 
   tldraw.push(data);
   return data;
